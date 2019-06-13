@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    tools:layout_editor_absoluteY="25dp">
+    " /><TextView
+        android:id="@+id/books"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp64"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="دفترها"
+        android:textColor="#8277f4"
+        android:textSize="@dimen/sp20"
+        android:textStyle="bold" />
+    " />
+    <ImageView
+        android:id="@+id/img_same"
+        android:layout_width="@dimen/dp96"
+        android:layout_height="@dimen/dp96"
+        android:layout_marginRight="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp2"
+        android:layout_marginTop="@dimen/dp8"
+        android:src="@drawable/ic_launcher_background"
+        android:background="@drawable/backgr_img"
+        app:layout_constraintBottom_toTopOf="@+id/img_vocab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_same"
+        app:layout_constraintTop_toBottomOf="@+id/line_up" />
+    " />
+    <ImageView
+        android:id="@+id/img_vocab"
+        android:layout_width="@dimen/dp96"
+        android:layout_height="@dimen/dp96"
+        android:layout_marginRight="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp2"
+        android:src="@drawable/ic_launcher_background"
+        android:background="@drawable/backgr_img"
+        app:layout_constraintBottom_toTopOf="@+id/img_other"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_vocab"
+        app:layout_constraintTop_toBottomOf="@+id/img_same" />
+    " />
+    <ImageView
+        android:id="@+id/img_other"
+        android:layout_width="@dimen/dp96"
+        android:layout_height="@dimen/dp96"
+        android:layout_marginRight="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp2"
+        android:src="@drawable/ic_launcher_background"
+        android:background="@drawable/backgr_img"
+        app:layout_constraintBottom_toTopOf="@+id/line_down"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_other"
+        app:layout_constraintTop_toBottomOf="@+id/img_vocab" />
+
+    <TextView
+        android:id="@+id/txt_same"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp96"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp2"
+        android:layout_marginTop="@dimen/dp8"
+        android:background="@drawable/backgr_txt"
+        android:gravity="center"
+        android:text="دفتر همخوان ها"
+        android:textSize="@dimen/sp16"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txt_vocab"
+        app:layout_constraintEnd_toStartOf="@+id/img_same"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_up" />
+    " />
+    " /><TextView
+        android:id="@+id/txt_vocab"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp96"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp2"
+        android:background="@drawable/backgr_txt"
+        android:gravity="center"
+        android:text="دفتر واژگان"
+        android:textSize="@dimen/sp16"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txt_other"
+        app:layout_constraintEnd_toStartOf="@+id/img_vocab"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_same" />
+
+    <TextView
+        android:id="@+id/txt_other"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp96"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp2"
+        android:background="@drawable/backgr_txt"
+        android:gravity="center"
+        android:text="سایر دفترها"
+        android:textSize="@dimen/sp16"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/line_down"
+        app:layout_constraintEnd_toStartOf="@+id/img_other"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_vocab" />
+
+    <ImageView
+        android:id="@+id/sim_same"
+        android:layout_width="@dimen/dp16"
+        android:layout_height="@dimen/dp96"
+        android:layout_marginTop="@dimen/dp8"
+        android:src="@drawable/notebooks_03"
+        app:layout_constraintBottom_toTopOf="@+id/img_vocab"
+        app:layout_constraintEnd_toStartOf="@+id/img_same"
+        app:layout_constraintStart_toEndOf="@+id/txt_same"
+        app:layout_constraintTop_toBottomOf="@+id/line_up" />
+     " />
+
+    <ImageView
+        android:id="@+id/sim_vocab"
+        android:layout_width="@dimen/dp16"
+        android:layout_height="@dimen/dp96"
+        android:src="@drawable/notebooks_03"
+        app:layout_constraintBottom_toTopOf="@+id/img_other"
+        app:layout_constraintEnd_toStartOf="@+id/img_vocab"
+        app:layout_constraintStart_toEndOf="@+id/txt_vocab"
+        app:layout_constraintTop_toBottomOf="@+id/img_same" />
+
+    <ImageView
+        android:id="@+id/sim_other"
+        android:layout_width="@dimen/dp16"
+        android:layout_height="@dimen/dp96"
+        android:src="@drawable/notebooks_03"
+        app:layout_constraintBottom_toTopOf="@+id/line_down"
+        app:layout_constraintEnd_toStartOf="@+id/img_other"
+        app:layout_constraintStart_toEndOf="@+id/txt_other"
+        app:layout_constraintTop_toBottomOf="@+id/img_vocab" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/line_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="454dp"
+        app:layout_constraintGuide_percent=".65" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/line_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".1" />
+
+
+</android.support.constraint.ConstraintLayout>
