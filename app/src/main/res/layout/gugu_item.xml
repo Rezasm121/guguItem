@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f4f4f4"
-    tools:layout_editor_absoluteY="25dp">
-    " /><TextView
+    android:background="#f4f4f4">
+
+    <TextView
         android:id="@+id/books"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp64"
@@ -16,7 +16,7 @@
         android:textColor="#8277f4"
         android:textSize="@dimen/sp20"
         android:textStyle="bold" />
-    " />
+
     <ImageView
         android:id="@+id/img_same"
         android:layout_width="@dimen/dp96"
@@ -31,7 +31,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/txt_same"
         app:layout_constraintTop_toBottomOf="@+id/line_up" />
-    " />
+
     <ImageView
         android:id="@+id/img_vocab"
         android:layout_width="@dimen/dp96"
@@ -45,7 +45,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/txt_vocab"
         app:layout_constraintTop_toBottomOf="@+id/img_same" />
-    " />
+
     <ImageView
         android:id="@+id/img_other"
         android:layout_width="@dimen/dp96"
@@ -78,8 +78,8 @@
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/line_up" />
-    " />
-    " /><TextView
+
+    <TextView
         android:id="@+id/txt_vocab"
         android:layout_width="0dp"
         android:layout_height="@dimen/dp96"
@@ -124,7 +124,7 @@
         app:layout_constraintEnd_toStartOf="@+id/img_same"
         app:layout_constraintStart_toEndOf="@+id/txt_same"
         app:layout_constraintTop_toBottomOf="@+id/line_up" />
-     " />
+
 
     <ImageView
         android:id="@+id/sim_vocab"
